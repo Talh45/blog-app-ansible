@@ -67,6 +67,27 @@ http://54.160.152.240
 
 ## 📸 Screenshots
 
+### ⚙️ Execution Steps
+
+![Step1](ansible-project-1.png)
+
+![Step2](ansible-project-2.png)
+
+![Step3](ansible-project-3.png)
+
+![Step4](ansible-project-4.png)
+
+![Step5](ansible-project-5.png)
+
+![Step6](ansible-project-6.png)
+
+![Step7](ansible-project-7.png)
+
+### 🌐 Final Website Output
+
+![Website](website.png)
+
+
 
 
 ---
