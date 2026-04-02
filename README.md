@@ -104,7 +104,7 @@ http://54.160.152.240
 * Add security features (UFW, Fail2Ban)
 * Implement monitoring and logging
   
-## My next Project will have all of the above integrations
+My next Project will have all of the above integrations
 
 ---
 
