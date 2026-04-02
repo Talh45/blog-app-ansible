@@ -1,0 +1,28 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install nginx
+      ansible.builtin.apt:
+         name: nginx
+         state: present
+      notify:
+        - Restart nginx
+
+    - name: Remove default nginx page
+      ansible.builtin.file:
+        path: /var/www/html/
+        state: absent
+
+    - name: Git checkout
+      ansible.builtin.git:
+        repo: 'https://github.com/Talh45/blog-app-ansible.git'
+        dest: /var/www/html/
+      notify:
+        - Restart nginx
+
+  handlers:
+     - name: Restart nginx
+       ansible.builtin.service:
+        name: nginx
+        state: restarted
